@@ -33,13 +33,6 @@ jobs:
     needs: build
     if: github.ref == 'refs/heads/master'
     # environment: production
-
-    steps:     
-      - name: Build, tag, and push image to Amazon ECR
-        id: build-image
-        run: |
-          # Build a docker container and push it to ECR so that it can be deployed to ECS.
-          echo "hi"
     
     steps:
       -
